@@ -52,7 +52,7 @@ public class WhitakersWordsBot extends ListenerAdapter {
                 return "Something went wrong.";
             }
         }).thenAccept(message -> {
-            LOGGER.info("Processed query: " + word);
+            LOGGER.info("Processed query \"" + word + "\" from user " + event.getUser().getId());
             LOGGER.debug("Response: " + message);
             event.getHook().editOriginal(message).queue();
         });
