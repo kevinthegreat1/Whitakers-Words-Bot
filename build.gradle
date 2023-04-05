@@ -8,8 +8,6 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
-
-    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -18,7 +16,7 @@ dependencies {
 
     implementation 'org.slf4j:slf4j-simple:2.0.7'
     implementation 'com.google.code.gson:gson:2.10.1'
-    implementation 'com.github.DV8FromtheWorld:JDA:v5.0.0-beta.6'
+    implementation 'net.dv8tion:JDA:5.0.0-beta.6'
 }
 
 test {
